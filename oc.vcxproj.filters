@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="applayout.js" />
+    <None Include="appstyles.js" />
+    <None Include="busfeaturestyles.js" />
+    <None Include="bushistory.js" />
+    <None Include="coreeventhandler.js" />
+    <None Include="datepicker.js" />
+    <None Include="debug.html" />
+    <None Include="devicefeaturestyles.js" />
+    <None Include="devicehistory.js" />
+    <None Include="featuretables.js" />
+    <None Include="garagefeaturestyles.js" />
+    <None Include="incidentfeaturestyles.js" />
+    <None Include="index.html" />
+    <None Include="indexLocal.html" />
+    <None Include="init.js" />
+    <None Include="ioc.js" />
+    <None Include="ipta.js" />
+    <None Include="mapeventhandler.js" />
+    <None Include="maps.js" />
+    <None Include="messagefeaturestyles.js" />
+    <None Include="notificationeditor.js" />
+    <None Include="oc.js" />
+    <None Include="oc.VC.db" />
+    <None Include="occupancyfeaturestyles.js" />
+    <None Include="platformfeaturestyles.js" />
+    <None Include="routefeaturestyles.js" />
+    <None Include="core\bus - Debug.js" />
+    <None Include="core\bus.js" />
+    <None Include="core\core.js" />
+    <None Include="core\corefeaturelists.js" />
+    <None Include="core\device.js" />
+    <None Include="core\eta - Debug.js" />
+    <None Include="core\eta.js" />
+    <None Include="core\garage.js" />
+    <None Include="core\incident.js" />
+    <None Include="core\message.js" />
+    <None Include="core\notification.js" />
+    <None Include="core\occupancy.js" />
+    <None Include="core\platform.js" />
+    <None Include="core\route.js" />
+    <None Include="core\service.js" />
+    <None Include="core\user.js" />
+    <None Include="css\ioc.css" />
+    <None Include="image\svg\poweredByTF.svg" />
+    <None Include="images\bus.svg" />
+    <None Include="images\busWhitish.svg" />
+    <None Include="images\device.svg" />
+    <None Include="images\envelope.svg" />
+    <None Include="images\history.svg" />
+    <None Include="images\incident.svg" />
+    <None Include="images\label.svg" />
+    <None Include="images\msgbd.svg" />
+    <None Include="images\nolabels.svg" />
+    <None Include="images\notification.svg" />
+    <None Include="images\parking.svg" />
+    <None Include="images\pencil.svg" />
+    <None Include="images\recent.svg" />
+    <None Include="images\recentBlue.svg" />
+    <None Include="images\reload.svg" />
+    <None Include="images\stop.svg" />
+    <None Include="images\stopWhitish.svg" />
+    <None Include="images\stopWhitish2.svg" />
+    <None Include="images\track.svg" />
+    <None Include="images\user.svg" />
+    <None Include="images\refresh.svg" />
+    <None Include="featuretable.js" />
+    <None Include="images\polygon.svg" />
+    <None Include="mapcentroideditor.js" />
+    <None Include="mapshapeeditor.js" />
+    <None Include="images\plus.svg" />
+    <None Include="images\download.svg" />
+    <None Include="images\download2.svg" />
+    <None Include="images\road.svg" />
+    <None Include="routestopseditor.js" />
+    <None Include="extlineloader.js" />
+    <None Include="extlineshapeloader.js" />
+    <None Include="fl511.html" />
+    <None Include="fl511.js" />
+    <None Include="fullscreendiv.js" />
+    <None Include="routeed.js" />
+    <None Include="images\json.svg" />
+    <None Include="fullscreenbuslinejson.js" />
+    <None Include="initred.js" />
+    <None Include="red.html" />
+    <None Include="core\streetsmart.js" />
+    <None Include="streetsmartgraphfeaturestyles.js" />
+    <None Include="trafficreplay.js" />
+    <None Include="btr.html" />
+    <None Include="btrDebug.html" />
+    <None Include="initbtr.js" />
+    <None Include="images\video.svg" />
+    <None Include="livefeeds.js" />
+    <None Include="bustrip.js" />
+    <None Include="tripsDebug.html" />
+    <None Include="trips.js" />
+    <None Include="inittrips.js" />
+    <None Include="core\busfeed.js" />
+    <None Include="js\dash.all.min.js" />
+    <None Include="core\pkrecommendation.js" />
+    <None Include="core\pklastevent.js" />
+    <None Include="playvideo.html" />
+    <None Include="adhocbuses.js" />
+    <None Include="login.html" />
+    <None Include="pk.html" />
+    <None Include="red.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ioc-cat.txt" />
+    <Text Include="ioc-result.txt" />
+    <Text Include="todo.txt" />
+    <Text Include="MAKEIOC.txt" />
+    <Text Include="MAKERED.txt" />
+    <Text Include="MAKEBTR.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="image\mapBack.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\busBlueOsm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\busMarker.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\busRedOsm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\directionsm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\incidentMarker.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\messageMarker.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\OpCenterBar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\opCenterCorner.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

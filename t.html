@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,700" rel="stylesheet" type="text/css">
+
+    <link href="./css/ioc.css" rel="stylesheet" type="text/css">
+
+    <title>ITPA Bus Line Editor</title>
+</head>
+<body class="noSelectStyle" style="font-family:Roboto;background-color:navajowhite; font-size:16px;">
+
+    <!-- MAP/URL-API components -->
+    <!-- <script type="text/javascript" src="http://localhost/terramap/mapapi.js"></script>-->
+
+    <script type="text/javascript" src="http://localhost/terramap/openlayers/ol-debug.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/namespace.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/consts.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/platform.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/methods.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/domui.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/cookies.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/routingservice.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/ajax.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/glyphlib.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/glyphbutton.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/cssstylecreator.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/styles.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/debug.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/keyedlist.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/listeners.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/volcontrol.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/videopopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/videotrackplayer.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/graphbar.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/popup.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/radioCheckBtn.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/tbarpopup.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/canvas.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/dataParser.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/layout.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/urlparams.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/listcontent.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/dlayer.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/splitter.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/map.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/routeshapeeditor.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/polycode.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/geocodefly.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/revgeocoder.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/dbpage.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapinteract.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/customcontrol.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/featurelayer.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/deprecated.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/keyedfeaturelist.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/keyedfeature.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapfeature.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapfeaturestyle.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapfeaturegeom.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/customFeatures.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/maphtmloverlay.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/postrender.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legend.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legendpopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legendpopupm1.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legendoptions.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/layerspopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/typespopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/sourcespopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/infopopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/locinfopopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/messagepopup.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/addressbar.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/api.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/commonnames.js"></script>
+
+    <script type="text/javascript">
+        var ITPA = { OC: {} };
+
+
+        function createIcon(className, paddingTop) {
+            var icon = document.createElement('img'); icon.className = className; icon.src = './images/pencil.svg';
+            icon.style.paddingTop = paddingTop != undefined ? paddingTop : "4px";
+            return icon;
+        }
+
+        function createButton(className, eventListener, title, tooltip) {
+            var button = document.createElement('button');
+            button.className = className;
+            button.style.pointerEvents = "all";
+            button.style.display = "inline-block";
+            button.addEventListener('click', eventListener);
+            if (tf.js.GetIsNonEmptyString(title)) { button.innerHTML = title; }
+            if (tf.js.GetIsNonEmptyString(tooltip)) { button.title = tooltip; }
+            return button;
+        }
+
+        function makeToolBarButton(iconClassName, onClick, toolTip, iconPaddingTop, noHoverBool) {
+            var buttonWrapper = new tf.dom.Div({ cssClass: "listButtonWrapper" });
+            if (!noHoverBool) { tf.dom.AddCSSClass(buttonWrapper, "listButtonWrapperWithHover"); }
+            var button = createButton("list-button", onClick, undefined, toolTip);
+            button.appendChild(createIcon(iconClassName, iconPaddingTop));
+            if (noHoverBool) {
+                tf.dom.AddCSSClass(button, "rowButtonWrapperWithHover");
+            }
+            buttonWrapper.AddContent(button);
+            return { button: button, wrapper: buttonWrapper };
+        }
+
+        function foo(notification) {
+            console.log('bar');
+        }
+
+        var editButton = makeToolBarButton("pencil-button", foo, "Edit", "0px", true);
+
+
+        document.body.appendChild(editButton.wrapper.GetHTMLElement());
+
+    </script>
+</body>
+</html>

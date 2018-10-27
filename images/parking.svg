@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/parking garage blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/parking-garage-blue">
+            <g id="icon/parking-garage-white" transform="translate(0.000000, 1.000000)">
+                <path d="M4,23 L4,8 L10.625641,8 C12.3609366,8 13.7350377,8.51892033 14.7479853,9.55677656 C15.760933,10.5946328 16.2673993,11.9272202 16.2673993,13.5545788 C16.2673993,15.1902402 15.7588573,16.5186762 14.7417582,17.5399267 C13.7246591,18.5611773 12.3443311,19.0717949 10.6007326,19.0717949 L7.01391941,19.0717949 L7.01391941,23 L4,23 Z M7.01391941,16.6556777 L9.19340659,16.6556777 C10.5384683,16.6556777 11.543098,16.4294284 12.207326,15.9769231 C12.871554,15.5244178 13.203663,14.7169777 13.203663,13.5545788 C13.203663,12.5665396 12.9338244,11.8026889 12.3941392,11.2630037 C11.854454,10.7233184 11.098906,10.4534799 10.1274725,10.4534799 L7.01391941,10.4534799 L7.01391941,16.6556777 Z" id="P" fill="#003377"></path>
+                <polyline id="Path" stroke="#003377" stroke-width="2" points="0.53414624 5.50490158 9.4556581 0.0496011913 18.5341462 5.50490158"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

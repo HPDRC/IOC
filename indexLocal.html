@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,700" rel="stylesheet" type="text/css">
+
+    <style>
+        progress {
+          appearance: none;
+          width: 50%;
+          height: 5px;
+          margin-left: 25%;
+        }
+        progress::-webkit-progress-value {
+          background: #0047b3;
+        }
+        progress::-webkit-progress-bar {
+          background: #cccccc;
+        }
+        .counter-box{
+            float:left;
+            height: 100%;
+            width: 22%;
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            /*margin: 0px 1.1%;*/
+            margin: 0px;
+            margin-right: 2.2%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(215, 216, 210);
+            border-radius: 2px;
+            padding: 0px !important;
+        }
+
+        .counter-box-content {
+          height: 70%;
+          font-size: 3em;
+          line-height: 1.5em;
+          color: #004499;
+        }
+
+        .counter-box-footer{
+            padding-bottom: 4px;
+        }
+
+        .counter-box-footer span {
+          margin-top: 4px;
+          margin-right:4px;
+          font-size: 1.3em;
+          vertical-align:text-bottom;
+          display: inline-block;
+          padding-top: 4px;
+        }
+
+        .counter-box-footer img {
+          vertical-align:middle;
+          float: left;
+          margin-top: 6%;
+          margin-left: 10%;
+          height: 24px;
+        }
+
+
+    </style>
+
+    <title>ITPA Interactive Operations Center</title>
+</head>
+<body>
+    <!-- MAP/URL-API components -->
+
+    <script type="text/javascript" src="http://experiment2.cs.fiu.edu/hterramap/test/mapapi.js"></script>
+
+    <!-- components of this ITPA app -->
+
+    <script type="text/javascript" src="./oc.js"></script>
+
+    <script type="text/javascript" src="./applayout.js"></script>
+
+    <script type="text/javascript" src="./coreeventhandler.js"></script>
+
+    <script type="text/javascript" src="./maps.js"></script>
+    <script type="text/javascript" src="./mapeventhandler.js"></script>
+
+    <script type="text/javascript" src="./busfeaturestyles.js"></script>
+    <script type="text/javascript" src="./platformfeaturestyles.js"></script>
+    <script type="text/javascript" src="./garagefeaturestyles.js"></script>
+    <script type="text/javascript" src="./occupancyfeaturestyles.js"></script>
+    <script type="text/javascript" src="./routefeaturestyles.js"></script>
+    <script type="text/javascript" src="./messagefeaturestyles.js"></script>
+    <script type="text/javascript" src="./incidentfeaturestyles.js"></script>
+
+    <script type="text/javascript" src="./appstyles.js"></script>
+
+    <!-- ITPA Core components -->
+
+    <script type="text/javascript" src="./core/core.js"></script>
+    <script type="text/javascript" src="./core/message.js"></script>
+    <script type="text/javascript" src="./core/incident.js"></script>
+    <script type="text/javascript" src="./core/garage.js"></script>
+    <script type="text/javascript" src="./core/occupancy.js"></script>
+    <script type="text/javascript" src="./core/bus.js"></script>
+    <script type="text/javascript" src="./core/platform.js"></script>
+    <script type="text/javascript" src="./core/route.js"></script>
+    <script type="text/javascript" src="./core/eta.js"></script>
+    <script type="text/javascript" src="./core/monitor.js"></script>
+    <script type="text/javascript" src="./core/avgspeed.js"></script>
+    <script type="text/javascript" src="./core/corefeaturelists.js"></script>
+
+    <!-- initialization of this ITPA app -->
+
+    <script type="text/javascript" src="./init.js"></script>
+</body>
+</html>

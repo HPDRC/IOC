@@ -1,0 +1,420 @@
+
+Conversation opened. 23 messages. All messages read.
+
+Skip to content
+Using Gmail with screen readers
+Search
+
+
+
+The attachment has been saved to Google Drive.  Learn more
+Gmail
+COMPOSE
+Labels
+Inbox
+Starred
+Important
+Sent Mail
+Drafts
+Personal
+Travel
+Unwanted
+More 
+Hangouts
+
+ 
+ 
+ 
+  More 
+1 of 1  
+ 
+Expand all Print all In new window
+parking integration
+Inbox
+x  
+Work
+x 
+
+Naphtali David Rishe		Dec 27 (3 days ago)
+Leo, how are we doing on this? -- Thank you, -- Naphtali Rishe 786-268-9625 W...
+18 older messages
+
+Leonard Bay		Dec 28 (2 days ago)
+Hi Victor, >I don’t do javascript That is unfortunate, because the API is to ...
+
+Victor Potapenko
+AttachmentsDec 29 (1 day ago)
+
+to me, Oliver, NDR, Gerald 
+Leo,
+
+With his expertise in JavaScript, Pachev was kind enough to provide a sample API JavaScript, which requires JQuery (https://jquery.com) and AngularJS (https://angularjs.org) to be installed. It has been tested and it works as expected.
+
+See attached.
+
+Regards,
+Victor
+
+
+On Dec 28, 2016, at 9:01 AM, Leonard Bay <leonardbay@gmail.com> wrote:
+
+Hi Victor,
+ 
+>I don’t do javascript
+ 
+That is unfortunate, because the API is to be primarily accessed from Javascript.
+ 
+>The service has been tested and it works.
+ 
+The service works, but, at the risk of re-repeating myself, it was not tested using a Javascript client.
+ 
+>but here is a simple “curl” command [...]
+ 
+Again, the API will not be primarily accessed using "curl".
+ 
+I see two mutually exclusive possibilities:
+ 
+1 - Either I am too incompetent (or just unwilling) to implement the obvious, or,
+ 
+2 - There is still work to be done before the API can be accessed from Javascript (in a web site or app)
+ 
+Fortunatelly, both possibilities require the same solution: that someone, other than myself, write Javascript code to access the API. Once written, that code will either succeed (in which case I'll use it), or fail (in which case settings in the API server will need to be adjusted). 
+ 
+Finally, this discussion could have been avoided if the API had already been tested using a Javascript client, a necessary step to be taken before declaring it operational.
+ 
+Thank you, Leo
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+----- Original Message ----- 
+From: Victor Potapenko
+To: Leonard Bay
+Cc: Oliver Ullrich ; NDR@acm.org ; Gerald Inberg
+Sent: Wednesday, December 28, 2016 8:43 AM
+Subject: Re: parking integration
+
+Hello Leo,
+
+The service has been tested and it works. It is a RESTful API based on Django Rest Framework. It works just like any other RESTful API. I don’t do javascript, but here is a simple “curl” command that gets the job done (here it is shown with my API TOKEN, I insist that you create and use your own by following the instructions I have previously shared). This is the curl command:
+
+curl -X GET http://xpect.cs.fiu.edu/itpaparkingsites/availabilities/ -H 'Authorization: Token 1f691ebd8e5932dc6b925ed0c80430588b7d3fac' -H 'Accept: application/json'
+
+As you can see, this is a “GET” request to the desired API Endpoint with two Headers. ‘Authorization’ is the header that contains the word Token and the actual token itself. The ‘Accept’ header tells the API what data format the requester is wants to be returned.
+
+I hope this helps.
+
+Best regards,
+Victor
+
+On Dec 27, 2016, at 6:11 PM, Leonard Bay <leonardbay@gmail.com> wrote:
+
+Hi Victor, Oliver,
+ 
+Good for you Oliver, I am glad you can use the service.
+ 
+Victor, please let me know when the Javascript code / simple web page is ready, so I can test it.
+ 
+Thank you, Leo
+ 
+----- Original Message -----
+From: Oliver Ullrich
+To: Victor Potapenko
+Cc: Leonard Bay ; NDR@acm.org ; Gerald Inberg
+Sent: Tuesday, December 27, 2016 6:05 PM
+Subject: Re: parking integration
+
+Hello Victor.
+The service works fine for me. Using the credentials you passed on a call (http://xpect.cs.fiu.edu/itpaparkingsites/availabilities/?format=json) results in
+[{"site_id":35,"decalgroup":"Student","total":560,"available":560,"created":"2016-12-27T23:01:57.378838"},{"site_id":35,"decalgroup":"Staff","total":211,"available":211,"created":"2016-12-27T23:01:57.380576"},{"site_id":36,"decalgroup":"Student","total":604,"available":604,"created":"2016-12-27T23:01:57.383576"},{"site_id":36,"decalgroup":"Staff","total":275,"available":275,"created":"2016-12-27T23:01:57.385213"},{"site_id":37,"decalgroup":"Student","total":1255,"available":1252,"created":"2016-12-27T23:01:57.388281"},{"site_id":37,"decalgroup":"Staff","total":100,"available":99,"created":"2016-12-27T23:01:57.389884"},{"site_id":38,"decalgroup":"Student","total":945,"available":944,"created":"2016-12-27T23:01:57.392852"},{"site_id":38,"decalgroup":"Staff","total":330,"available":330,"created":"2016-12-27T23:01:57.394462"},{"site_id":39,"decalgroup":"Student","total":1559,"available":1555,"created":"2016-12-27T23:01:57.397402"},{"site_id":39,"decalgroup":"Staff","total":157,"available":156,"created":"2016-12-27T23:01:57.399025"}]
+Thank you Victor, well done!
+
+Oliver.
+
+
+On 12/27/2016 4:55 PM, Leonard Bay wrote:
+Hi Victor,
+ 
+>There is no special Javascript required.
+>If you want to get JSON,
+ 
+I thought JSON was the default, I didn't know a special parameter was required.
+ 
+Regardless, I am still unable to retrieve JSON from the service, have you tested it by writing Javascript code to access it? If so, please send the code, otherwise please write it so you test it.
+ 
+Thank you, Leo
+ 
+ 
+ 
+ 
+----- Original Message -----
+From: Victor Potapenko
+To: Leonard Bay
+Cc: NDR@acm.org ; Oliver Ullrich ; Gerald Inberg
+Sent: Tuesday, December 27, 2016 4:50 PM
+Subject: Re: parking integration
+
+There is no special Javascript required. 
+
+All data is returned in JSON format that you can use for your services.
+If you want to get JSON, you need to access the api passing a special parameter, like so:
+http://xpect.cs.fiu.edu/itpaparkingsites/availabilities/?format=json
+
+Regards,
+Victor
+
+On Dec 27, 2016, at 4:47 PM, Leonard Bay <leonardbay@gmail.com> wrote:
+
+Hi Victor,
+ 
+Please send a sample Javascript code that accesses that service, e.g. a web page that displays the output of the.
+ 
+Thank you, Leo
+ 
+----- Original Message ----- 
+From: Victor Potapenko
+To: Leonard Bay
+Cc: NDR@acm.org ; Oliver Ullrich ; Gerald Inberg
+Sent: Tuesday, December 27, 2016 4:29 PM
+Subject: Re: parking integration
+
+Leo, 
+
+The service is up and running.
+The endpoint is: http://xpect.cs.fiu.edu/itpaparkingsites/availabilities/ 
+
+Let me know if this works for you.
+
+Regards,
+Victor
+
+On Dec 27, 2016, at 2:33 PM, Leonard Bay <leonardbay@gmail.com> wrote:
+
+Thank you, Leo
+
+On Dec 27, 2016 2:32 PM, "Victor Potapenko" <vpota001@fiu.edu> wrote:
+Thank you for the clarification.
+
+Will implement later today and let you know.
+
+Regards,
+Victor
+
+On Dec 27, 2016, at 2:25 PM, Leonard Bay <leonardbay@gmail.com> wrote:
+
+Hi Victor,
+ 
+Please implement the service:
+ 
+/itpaparkingsites/availability
+ 
+that returns the occupancy of all the parking sites currently supported (clarification about the word "all":  the merge of the results returned by calls to /itpaparkingsites/{parking_site_id}/availability for all {parking_sited_id}'s that are currently supported).
+ 
+Thank you, Leo
+ 
+----- Original Message ----- 
+From: Victor Potapenko
+To: Leonard Bay
+Cc: NDR@acm.org ; Oliver Ullrich ; Gerald Inberg
+Sent: Tuesday, December 27, 2016 2:21 PM
+Subject: Re: parking integration
+
+Leo, 
+
+I have already answered your question. If the question was not answered to your satisfaction, please, clarify the question.
+
+Regards,
+Victor
+
+On Dec 27, 2016, at 2:17 PM, Leonard Bay <leonardbay@gmail.com> wrote:
+
+Hi Victor,
+ 
+Right, but, again, what service should be called to obtain occupancy for all (supported) ITPA parking sites, identified by parking site id? If the anwser is "there isn't one", then the question is how long until we have that service?
+ 
+Thank you, Leo
+ 
+ 
+----- Original Message ----- 
+From: Victor Potapenko
+To: Leonard Bay
+Cc: NDR@acm.org ; Oliver Ullrich ; Gerald Inberg
+Sent: Tuesday, December 27, 2016 2:15 PM
+Subject: Re: parking integration
+
+Hello Leo, 
+
+The endpoint for garage availability is the following:
+http://xpect.cs.fiu.edu/itpaparkingsites/35/availability/
+ where 35 is the ITPA parking site id.
+Regards,
+Victor
+On Dec 27, 2016, at 2:13 PM, Leonard Bay <leonardbay@gmail.com> wrote:
+Hi Victor,
+ 
+What service should be called to obtain occupancy for all (supported) ITPA parking sites, identified by parking site id?
+ 
+Thank you, Leo
+ 
+ 
+----- Original Message ----- 
+From: Victor Potapenko
+To: NDR@acm.org
+Cc: Leonard Bay ; Oliver Ullrich ; Gerald Inberg
+Sent: Tuesday, December 27, 2016 2:07 PM
+Subject: Re: parking integration
+Dr. Rishe, 
+The service is running. The api docs are available at: http://xpect.cs.fiu.edu/docs/ . I created a special endpoint for ITPA, which uses itpa parking site ids, called itpaparkingsites. All usage instructions are in the docs. Account access information is still current, login and password are the same.
+Best regards,
+Victor Potapenko
+On Dec 27, 2016, at 1:25 PM, Naphtali David Rishe <ndr@acm.org> wrote:
+Victor: 
+-- Thank you, -- Naphtali Rishe  786-268-9625 Whitelist-NDR-SVP
+On Tue, Dec 27, 2016 at 1:14 PM, Leonard Bay <leonardbay@gmail.com> wrote: 
+Rishe,
+ 
+>how are we doing on this?
+ 
+Still waiting for Victor to use ITPA parking side ids.
+ 
+I've been working on MDT feeds, data, etc. Hopefully will have it finished by New Year, and integrate it with ITPA. At that point, we'll need to include schedule information for FIU buses (from Parking and Transportation), and create front end capabilities to allow UTMA to specify bus routes and schedules. That will give FIU / UTMA the same capabilites that I am developing for MDT (to display schedules and do trip planning).
+ 
+Thank you, Leo
+ 
+----- Original Message ----- 
+From: Naphtali David Rishe
+To: Leonard Bay
+Sent: Tuesday, December 27, 2016 1:01 PM
+Subject: parking integration
+Leo, how are we doing on this? 
+-- Thank you, -- Naphtali Rishe  786-268-9625 Whitelist-NDR-SVP
+-- 
+Dr. Oliver Ullrich, Director, Computational Transportation Lab
+Industry-University Cooperative Research Center
+School of Computing and Information Sciences
+Florida International University
+ECS 243C, 11200 SW 8th St, Miami FL-33199
+(305)-348-6240, oullrich@cs.fiu.edu
+Attachments area
+
+Leonard Bay		AttachmentsDec 29 (1 day ago)
+Hi Victor, Please thank Pachev for his help. In order to test the code fragme...
+
+Leonard Bay <leonardbay@gmail.com>
+5:51 PM (22 hours ago)
+
+to Victor, Oliver, NDR, Gerald 
+Hi Victor,
+ 
+>Circumstances identified, issue has been resolved.
+ 
+Thank you Victor, well done!
+Tomorrow afternoon I'll integrate the service to the IOC and app, I'll notify all CC'd when done.
+ 
+Thank you, Leo
+ 
+ 
+ 
+----- Original Message -----
+From: Victor Potapenko
+To: Leonard Bay
+Cc: Oliver Ullrich ; NDR@acm.org ; Gerald Inberg
+Sent: Thursday, December 29, 2016 5:44 PM
+Subject: Re: parking integration
+
+Hello Leo,
+
+On Dec 29, 2016, at 3:19 PM, Leonard Bay <leonardbay@gmail.com> wrote:
+
+Hi Victor,
+ 
+>With his expertise in JavaScript, Pachev was kind enough to provide a sample API JavaScript, which requires JQuery (https://jquery.com) and AngularJS (https://angularjs.org) to be installed. 
+ 
+Please thank Pachev for his help.
+
+Done
+
+ 
+In order to test the code fragment, I removed the angular part of the code, leaving only the jquery part. Then, I created a small html file, including jquery directly from googleapis (no installation required). 
+ 
+Any browser can display this web page, and when displayed it will attempt to access the service and log the service reply to the console, as Pachev designed it to do.
+ 
+>It has been tested and it works as expected.
+ 
+Unexpectedly, there is an error when displaying this web page, that occurs when attempting to access the service. Please save the attached html file to your PC, or any server, and use a browser to display it to see if it works on your end. If it does work at your end, then please try to identify the circumstances in which it does not work.
+
+Circumstances identified, issue has been resolved.
+
+The cross origin requests have been blocked for security reasons, they are enabled now. However, for security reasons, it is necessary to identify the request origins by domain name, or by domain name regular expression in order to whitelist them. Currently all are allowed. My recommendation is to lock it to particular domains used by ITPA apps to access the API.
+...
+
+[Message clipped]  View entire message
+	
+Click here to Reply, Reply to all, or Forward
+1 deleted message in this conversation. View message or delete forever.
+0.11 GB (0%) of 15 GB used
+Manage
+Terms - Privacy
+Last account activity: 6 hours ago
+Details
+People (4)
+Victor Potapenko's profile photo
+Victor Potapenko
+vpota001@fiu.edu
+
+Show details
+
+
+/*Get request in Ionic for the phone App which also uses angularjs
+  https://docs.angularjs.org/api/ng/service/$http
+  https://docs.angularjs.org/misc/downloading
+*/
+
+//working example for Victor's api
+
+//This token is used to authorize access to the api and is provided to a user
+var token = 'Token 1f691ebd8e5932dc6b925ed0c80430588b7d3fac'
+
+$http({
+  method: 'GET',
+  url: 'http://xpect.cs.fiu.edu/itpaparkingsites/availabilities/ ',
+  headers: {
+    'Authorization': token,
+    'Accept': 'application/json'
+  }
+}).then(function successCallback(response) {
+    console.log(response)
+    //Here is wehre you handle what happens to the objects that are returned
+  }, function errorCallback(response) {
+    console.log(response)
+    // Here is wher eyou handle what happens if an error occurs
+  });
+
+
+/*Get request in plain javascript for the op-center using Jquery Ajax
+    https://api.jquery.com/jQuery.ajax/
+    https://jquery.com/download/
+*/
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://xpect.cs.fiu.edu/itpaparkingsites/availabilities/",
+  "method": "GET",
+  "headers": {
+    "Authorization": "Token 1f691ebd8e5932dc6b925ed0c80430588b7d3fac",
+    "Accept": "application/json",
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+api_request.js
+Open with
+Displaying api_request.js.

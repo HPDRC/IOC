@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9C665D3-001F-4ED9-B2D7-BEFE2FE71B1F}</ProjectGuid>
+    <RootNamespace>oc</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="adhocbuses.js" />
+    <None Include="applayout.js" />
+    <None Include="appstyles.js" />
+    <None Include="btr.html" />
+    <None Include="btrDebug.html" />
+    <None Include="busfeaturestyles.js" />
+    <None Include="bushistory.js" />
+    <None Include="bustrip.js" />
+    <None Include="coreeventhandler.js" />
+    <None Include="core\bus - Debug.js" />
+    <None Include="core\bus.js" />
+    <None Include="core\busfeed.js" />
+    <None Include="core\core.js" />
+    <None Include="core\corefeaturelists.js" />
+    <None Include="core\device.js" />
+    <None Include="core\eta - Debug.js" />
+    <None Include="core\eta.js" />
+    <None Include="core\garage.js" />
+    <None Include="core\incident.js" />
+    <None Include="core\message.js" />
+    <None Include="core\notification.js" />
+    <None Include="core\occupancy.js" />
+    <None Include="core\pklastevent.js" />
+    <None Include="core\pkrecommendation.js" />
+    <None Include="core\platform.js" />
+    <None Include="core\route.js" />
+    <None Include="core\service.js" />
+    <None Include="core\streetsmart.js" />
+    <None Include="core\user.js" />
+    <None Include="css\ioc.css" />
+    <None Include="datepicker.js" />
+    <None Include="debug.html" />
+    <None Include="devicefeaturestyles.js" />
+    <None Include="devicehistory.js" />
+    <None Include="extlineloader.js" />
+    <None Include="extlineshapeloader.js" />
+    <None Include="featuretable.js" />
+    <None Include="featuretables.js" />
+    <None Include="fl511.html" />
+    <None Include="fl511.js" />
+    <None Include="fullscreenbuslinejson.js" />
+    <None Include="fullscreendiv.js" />
+    <None Include="garagefeaturestyles.js" />
+    <None Include="images\bus.svg" />
+    <None Include="images\busWhitish.svg" />
+    <None Include="images\device.svg" />
+    <None Include="images\download.svg" />
+    <None Include="images\download2.svg" />
+    <None Include="images\envelope.svg" />
+    <None Include="images\history.svg" />
+    <None Include="images\incident.svg" />
+    <None Include="images\json.svg" />
+    <None Include="images\label.svg">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="images\msgbd.svg" />
+    <None Include="images\nolabels.svg" />
+    <None Include="images\notification.svg" />
+    <None Include="images\parking.svg" />
+    <None Include="images\pencil.svg">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="images\plus.svg" />
+    <None Include="images\polygon.svg" />
+    <None Include="images\recent.svg" />
+    <None Include="images\recentBlue.svg" />
+    <None Include="images\refresh.svg" />
+    <None Include="images\reload.svg" />
+    <None Include="images\road.svg" />
+    <None Include="images\stop.svg" />
+    <None Include="images\stopWhitish.svg" />
+    <None Include="images\stopWhitish2.svg" />
+    <None Include="images\track.svg" />
+    <None Include="images\user.svg" />
+    <None Include="images\video.svg" />
+    <None Include="image\svg\poweredByTF.svg" />
+    <None Include="incidentfeaturestyles.js" />
+    <None Include="index.html" />
+    <None Include="indexLocal.html" />
+    <None Include="init.js" />
+    <None Include="initbtr.js" />
+    <None Include="initred.js" />
+    <None Include="inittrips.js" />
+    <None Include="ioc.js" />
+    <None Include="ipta.js" />
+    <None Include="js\dash.all.min.js" />
+    <None Include="livefeeds.js" />
+    <None Include="login.html" />
+    <None Include="mapcentroideditor.js" />
+    <None Include="mapeventhandler.js" />
+    <None Include="maps.js" />
+    <None Include="mapshapeeditor.js" />
+    <None Include="pk.html" />
+    <None Include="playvideo.html" />
+    <None Include="red.html" />
+    <None Include="red.js" />
+    <None Include="routeed.js" />
+    <None Include="routestopseditor.js" />
+    <None Include="messagefeaturestyles.js" />
+    <None Include="notificationeditor.js" />
+    <None Include="oc.js" />
+    <None Include="oc.VC.db" />
+    <None Include="occupancyfeaturestyles.js" />
+    <None Include="platformfeaturestyles.js" />
+    <None Include="routefeaturestyles.js" />
+    <None Include="streetsmartgraphfeaturestyles.js" />
+    <None Include="trafficreplay.js" />
+    <None Include="trips.js" />
+    <None Include="tripsDebug.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ioc-cat.txt" />
+    <Text Include="ioc-result.txt" />
+    <Text Include="MAKEBTR.txt" />
+    <Text Include="MAKEIOC.txt" />
+    <Text Include="MAKERED.txt" />
+    <Text Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\busBlueOsm.png" />
+    <Image Include="images\busMarker.png" />
+    <Image Include="images\busRedOsm.png" />
+    <Image Include="images\directionsm.png" />
+    <Image Include="images\incidentMarker.png" />
+    <Image Include="images\messageMarker.png" />
+    <Image Include="images\OpCenterBar.png" />
+    <Image Include="images\opCenterCorner.png" />
+    <Image Include="image\mapBack.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

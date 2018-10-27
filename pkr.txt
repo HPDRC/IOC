@@ -1,0 +1,1231 @@
+[{
+    "site": {
+        "id": 35,
+        "name": "PG-1",
+        "description": "Gold Parking Garage",
+        "lat": 25.754874,
+        "lon": -80.372147,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 2,
+        "name": "Student",
+        "description": "FIU Student Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 35,
+        "name": "PG-1",
+        "description": "Gold Parking Garage",
+        "lat": 25.754874,
+        "lon": -80.372147,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 3,
+        "name": "Staff",
+        "description": "FIU Faculty and Staff Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 35,
+        "name": "PG-1",
+        "description": "Gold Parking Garage",
+        "lat": 25.754874,
+        "lon": -80.372147,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 4,
+        "name": "Administration",
+        "description": "FIU Administration Decal"
+    },
+    "area": {
+        "id": 4,
+        "label": "BW",
+        "score": 2,
+        "site": {
+            "id": 35,
+            "name": "PG-1",
+            "description": "Gold Parking Garage",
+            "lat": 25.754874,
+            "lon": -80.372147,
+            "network": 1
+        },
+        "level": {
+            "id": 1,
+            "level": 1,
+            "altitude": 0,
+            "site": 35
+        }
+    }
+}, {
+    "site": {
+        "id": 35,
+        "name": "PG-1",
+        "description": "Gold Parking Garage",
+        "lat": 25.754874,
+        "lon": -80.372147,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 5,
+        "name": "Executive",
+        "description": "FIU Executive Decal"
+    },
+    "area": {
+        "id": 10,
+        "label": "DW",
+        "score": 1,
+        "site": {
+            "id": 35,
+            "name": "PG-1",
+            "description": "Gold Parking Garage",
+            "lat": 25.754874,
+            "lon": -80.372147,
+            "network": 1
+        },
+        "level": {
+            "id": 1,
+            "level": 1,
+            "altitude": 0,
+            "site": 35
+        }
+    }
+}, {
+    "site": {
+        "id": 35,
+        "name": "PG-1",
+        "description": "Gold Parking Garage",
+        "lat": 25.754874,
+        "lon": -80.372147,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 6,
+        "name": "Metered",
+        "description": "Metered Parking"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 35,
+        "name": "PG-1",
+        "description": "Gold Parking Garage",
+        "lat": 25.754874,
+        "lon": -80.372147,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 7,
+        "name": "Disabled",
+        "description": "Disabled Parking"
+    },
+    "area": {
+        "id": 10,
+        "label": "DW",
+        "score": 1,
+        "site": {
+            "id": 35,
+            "name": "PG-1",
+            "description": "Gold Parking Garage",
+            "lat": 25.754874,
+            "lon": -80.372147,
+            "network": 1
+        },
+        "level": {
+            "id": 1,
+            "level": 1,
+            "altitude": 0,
+            "site": 35
+        }
+    }
+}, {
+    "site": {
+        "id": 35,
+        "name": "PG-1",
+        "description": "Gold Parking Garage",
+        "lat": 25.754874,
+        "lon": -80.372147,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 8,
+        "name": "Carpool",
+        "description": "FIU Carpool Decal"
+    },
+    "area": {
+        "id": 22,
+        "label": "DW",
+        "score": 6,
+        "site": {
+            "id": 35,
+            "name": "PG-1",
+            "description": "Gold Parking Garage",
+            "lat": 25.754874,
+            "lon": -80.372147,
+            "network": 1
+        },
+        "level": {
+            "id": 2,
+            "level": 2,
+            "altitude": 0,
+            "site": 35
+        }
+    }
+}, {
+    "site": {
+        "id": 36,
+        "name": "PG-2",
+        "description": "Blue Parking Garage",
+        "lat": 25.753871,
+        "lon": -80.372108,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 2,
+        "name": "Student",
+        "description": "FIU Student Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 36,
+        "name": "PG-2",
+        "description": "Blue Parking Garage",
+        "lat": 25.753871,
+        "lon": -80.372108,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 3,
+        "name": "Staff",
+        "description": "FIU Faculty and Staff Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 36,
+        "name": "PG-2",
+        "description": "Blue Parking Garage",
+        "lat": 25.753871,
+        "lon": -80.372108,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 4,
+        "name": "Administration",
+        "description": "FIU Administration Decal"
+    },
+    "area": {
+        "id": 64,
+        "label": "BW",
+        "score": 3,
+        "site": {
+            "id": 36,
+            "name": "PG-2",
+            "description": "Blue Parking Garage",
+            "lat": 25.753871,
+            "lon": -80.372108,
+            "network": 1
+        },
+        "level": {
+            "id": 6,
+            "level": 1,
+            "altitude": 0,
+            "site": 36
+        }
+    }
+}, {
+    "site": {
+        "id": 36,
+        "name": "PG-2",
+        "description": "Blue Parking Garage",
+        "lat": 25.753871,
+        "lon": -80.372108,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 5,
+        "name": "Executive",
+        "description": "FIU Executive Decal"
+    },
+    "area": {
+        "id": 64,
+        "label": "BW",
+        "score": 3,
+        "site": {
+            "id": 36,
+            "name": "PG-2",
+            "description": "Blue Parking Garage",
+            "lat": 25.753871,
+            "lon": -80.372108,
+            "network": 1
+        },
+        "level": {
+            "id": 6,
+            "level": 1,
+            "altitude": 0,
+            "site": 36
+        }
+    }
+}, {
+    "site": {
+        "id": 36,
+        "name": "PG-2",
+        "description": "Blue Parking Garage",
+        "lat": 25.753871,
+        "lon": -80.372108,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 6,
+        "name": "Metered",
+        "description": "Metered Parking"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 36,
+        "name": "PG-2",
+        "description": "Blue Parking Garage",
+        "lat": 25.753871,
+        "lon": -80.372108,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 7,
+        "name": "Disabled",
+        "description": "Disabled Parking"
+    },
+    "area": {
+        "id": 61,
+        "label": "AW",
+        "score": 1,
+        "site": {
+            "id": 36,
+            "name": "PG-2",
+            "description": "Blue Parking Garage",
+            "lat": 25.753871,
+            "lon": -80.372108,
+            "network": 1
+        },
+        "level": {
+            "id": 6,
+            "level": 1,
+            "altitude": 0,
+            "site": 36
+        }
+    }
+}, {
+    "site": {
+        "id": 36,
+        "name": "PG-2",
+        "description": "Blue Parking Garage",
+        "lat": 25.753871,
+        "lon": -80.372108,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 8,
+        "name": "Carpool",
+        "description": "FIU Carpool Decal"
+    },
+    "area": {
+        "id": 85,
+        "label": "AW",
+        "score": 16,
+        "site": {
+            "id": 36,
+            "name": "PG-2",
+            "description": "Blue Parking Garage",
+            "lat": 25.753871,
+            "lon": -80.372108,
+            "network": 1
+        },
+        "level": {
+            "id": 8,
+            "level": 3,
+            "altitude": 0,
+            "site": 36
+        }
+    }
+}, {
+    "site": {
+        "id": 37,
+        "name": "PG-3",
+        "description": "Panther Parking Garage",
+        "lat": 25.758472,
+        "lon": -80.379878,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 2,
+        "name": "Student",
+        "description": "FIU Student Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 37,
+        "name": "PG-3",
+        "description": "Panther Parking Garage",
+        "lat": 25.758472,
+        "lon": -80.379878,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 3,
+        "name": "Staff",
+        "description": "FIU Faculty and Staff Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 37,
+        "name": "PG-3",
+        "description": "Panther Parking Garage",
+        "lat": 25.758472,
+        "lon": -80.379878,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 4,
+        "name": "Administration",
+        "description": "FIU Administration Decal"
+    },
+    "area": {
+        "id": 131,
+        "label": "DC",
+        "score": 3,
+        "site": {
+            "id": 37,
+            "name": "PG-3",
+            "description": "Panther Parking Garage",
+            "lat": 25.758472,
+            "lon": -80.379878,
+            "network": 1
+        },
+        "level": {
+            "id": 11,
+            "level": 1,
+            "altitude": 0,
+            "site": 37
+        }
+    }
+}, {
+    "site": {
+        "id": 37,
+        "name": "PG-3",
+        "description": "Panther Parking Garage",
+        "lat": 25.758472,
+        "lon": -80.379878,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 5,
+        "name": "Executive",
+        "description": "FIU Executive Decal"
+    },
+    "area": {
+        "id": 131,
+        "label": "DC",
+        "score": 3,
+        "site": {
+            "id": 37,
+            "name": "PG-3",
+            "description": "Panther Parking Garage",
+            "lat": 25.758472,
+            "lon": -80.379878,
+            "network": 1
+        },
+        "level": {
+            "id": 11,
+            "level": 1,
+            "altitude": 0,
+            "site": 37
+        }
+    }
+}, {
+    "site": {
+        "id": 37,
+        "name": "PG-3",
+        "description": "Panther Parking Garage",
+        "lat": 25.758472,
+        "lon": -80.379878,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 6,
+        "name": "Metered",
+        "description": "Metered Parking"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 37,
+        "name": "PG-3",
+        "description": "Panther Parking Garage",
+        "lat": 25.758472,
+        "lon": -80.379878,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 7,
+        "name": "Disabled",
+        "description": "Disabled Parking"
+    },
+    "area": {
+        "id": 132,
+        "label": "DE",
+        "score": 1,
+        "site": {
+            "id": 37,
+            "name": "PG-3",
+            "description": "Panther Parking Garage",
+            "lat": 25.758472,
+            "lon": -80.379878,
+            "network": 1
+        },
+        "level": {
+            "id": 11,
+            "level": 1,
+            "altitude": 0,
+            "site": 37
+        }
+    }
+}, {
+    "site": {
+        "id": 37,
+        "name": "PG-3",
+        "description": "Panther Parking Garage",
+        "lat": 25.758472,
+        "lon": -80.379878,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 8,
+        "name": "Carpool",
+        "description": "FIU Carpool Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 38,
+        "name": "PG-4",
+        "description": "Red Parking Garage",
+        "lat": 25.760196,
+        "lon": -80.373152,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 2,
+        "name": "Student",
+        "description": "FIU Student Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 38,
+        "name": "PG-4",
+        "description": "Red Parking Garage",
+        "lat": 25.760196,
+        "lon": -80.373152,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 3,
+        "name": "Staff",
+        "description": "FIU Faculty and Staff Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 38,
+        "name": "PG-4",
+        "description": "Red Parking Garage",
+        "lat": 25.760196,
+        "lon": -80.373152,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 4,
+        "name": "Administration",
+        "description": "FIU Administration Decal"
+    },
+    "area": {
+        "id": 203,
+        "label": "DC",
+        "score": 2,
+        "site": {
+            "id": 38,
+            "name": "PG-4",
+            "description": "Red Parking Garage",
+            "lat": 25.760196,
+            "lon": -80.373152,
+            "network": 1
+        },
+        "level": {
+            "id": 17,
+            "level": 1,
+            "altitude": 0,
+            "site": 38
+        }
+    }
+}, {
+    "site": {
+        "id": 38,
+        "name": "PG-4",
+        "description": "Red Parking Garage",
+        "lat": 25.760196,
+        "lon": -80.373152,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 5,
+        "name": "Executive",
+        "description": "FIU Executive Decal"
+    },
+    "area": {
+        "id": 203,
+        "label": "DC",
+        "score": 2,
+        "site": {
+            "id": 38,
+            "name": "PG-4",
+            "description": "Red Parking Garage",
+            "lat": 25.760196,
+            "lon": -80.373152,
+            "network": 1
+        },
+        "level": {
+            "id": 17,
+            "level": 1,
+            "altitude": 0,
+            "site": 38
+        }
+    }
+}, {
+    "site": {
+        "id": 38,
+        "name": "PG-4",
+        "description": "Red Parking Garage",
+        "lat": 25.760196,
+        "lon": -80.373152,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 6,
+        "name": "Metered",
+        "description": "Metered Parking"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 38,
+        "name": "PG-4",
+        "description": "Red Parking Garage",
+        "lat": 25.760196,
+        "lon": -80.373152,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 7,
+        "name": "Disabled",
+        "description": "Disabled Parking"
+    },
+    "area": {
+        "id": 202,
+        "label": "DW",
+        "score": 1,
+        "site": {
+            "id": 38,
+            "name": "PG-4",
+            "description": "Red Parking Garage",
+            "lat": 25.760196,
+            "lon": -80.373152,
+            "network": 1
+        },
+        "level": {
+            "id": 17,
+            "level": 1,
+            "altitude": 0,
+            "site": 38
+        }
+    }
+}, {
+    "site": {
+        "id": 38,
+        "name": "PG-4",
+        "description": "Red Parking Garage",
+        "lat": 25.760196,
+        "lon": -80.373152,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 8,
+        "name": "Carpool",
+        "description": "FIU Carpool Decal"
+    },
+    "area": {
+        "id": 195,
+        "label": "AE",
+        "score": 14,
+        "site": {
+            "id": 38,
+            "name": "PG-4",
+            "description": "Red Parking Garage",
+            "lat": 25.760196,
+            "lon": -80.373152,
+            "network": 1
+        },
+        "level": {
+            "id": 17,
+            "level": 1,
+            "altitude": 0,
+            "site": 38
+        }
+    }
+}, {
+    "site": {
+        "id": 39,
+        "name": "PG-5",
+        "description": "Market Station",
+        "lat": 25.76018,
+        "lon": -80.37157,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 2,
+        "name": "Student",
+        "description": "FIU Student Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 39,
+        "name": "PG-5",
+        "description": "Market Station",
+        "lat": 25.76018,
+        "lon": -80.37157,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 3,
+        "name": "Staff",
+        "description": "FIU Faculty and Staff Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 39,
+        "name": "PG-5",
+        "description": "Market Station",
+        "lat": 25.76018,
+        "lon": -80.37157,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 4,
+        "name": "Administration",
+        "description": "FIU Administration Decal"
+    },
+    "area": {
+        "id": 267,
+        "label": "AEC",
+        "score": 0,
+        "site": {
+            "id": 39,
+            "name": "PG-5",
+            "description": "Market Station",
+            "lat": 25.76018,
+            "lon": -80.37157,
+            "network": 1
+        },
+        "level": {
+            "id": 23,
+            "level": 2,
+            "altitude": 0,
+            "site": 39
+        }
+    }
+}, {
+    "site": {
+        "id": 39,
+        "name": "PG-5",
+        "description": "Market Station",
+        "lat": 25.76018,
+        "lon": -80.37157,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 5,
+        "name": "Executive",
+        "description": "FIU Executive Decal"
+    },
+    "area": {
+        "id": 267,
+        "label": "AEC",
+        "score": 0,
+        "site": {
+            "id": 39,
+            "name": "PG-5",
+            "description": "Market Station",
+            "lat": 25.76018,
+            "lon": -80.37157,
+            "network": 1
+        },
+        "level": {
+            "id": 23,
+            "level": 2,
+            "altitude": 0,
+            "site": 39
+        }
+    }
+}, {
+    "site": {
+        "id": 39,
+        "name": "PG-5",
+        "description": "Market Station",
+        "lat": 25.76018,
+        "lon": -80.37157,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 6,
+        "name": "Metered",
+        "description": "Metered Parking"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 39,
+        "name": "PG-5",
+        "description": "Market Station",
+        "lat": 25.76018,
+        "lon": -80.37157,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 7,
+        "name": "Disabled",
+        "description": "Disabled Parking"
+    },
+    "area": {
+        "id": 268,
+        "label": "AE",
+        "score": 0,
+        "site": {
+            "id": 39,
+            "name": "PG-5",
+            "description": "Market Station",
+            "lat": 25.76018,
+            "lon": -80.37157,
+            "network": 1
+        },
+        "level": {
+            "id": 23,
+            "level": 2,
+            "altitude": 0,
+            "site": 39
+        }
+    }
+}, {
+    "site": {
+        "id": 39,
+        "name": "PG-5",
+        "description": "Market Station",
+        "lat": 25.76018,
+        "lon": -80.37157,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 8,
+        "name": "Carpool",
+        "description": "FIU Carpool Decal"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 40,
+        "name": "PG-6",
+        "description": "Tech Station",
+        "lat": 25.760264,
+        "lon": -80.374552,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 2,
+        "name": "Student",
+        "description": "FIU Student Decal"
+    },
+    "area": {
+        "id": 385,
+        "label": "A",
+        "score": 1,
+        "site": {
+            "id": 40,
+            "name": "PG-6",
+            "description": "Tech Station",
+            "lat": 25.760264,
+            "lon": -80.374552,
+            "network": 1
+        },
+        "level": {
+            "id": 29,
+            "level": 1,
+            "altitude": 0,
+            "site": 40
+        }
+    }
+}, {
+    "site": {
+        "id": 40,
+        "name": "PG-6",
+        "description": "Tech Station",
+        "lat": 25.760264,
+        "lon": -80.374552,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 3,
+        "name": "Staff",
+        "description": "FIU Faculty and Staff Decal"
+    },
+    "area": {
+        "id": 385,
+        "label": "A",
+        "score": 1,
+        "site": {
+            "id": 40,
+            "name": "PG-6",
+            "description": "Tech Station",
+            "lat": 25.760264,
+            "lon": -80.374552,
+            "network": 1
+        },
+        "level": {
+            "id": 29,
+            "level": 1,
+            "altitude": 0,
+            "site": 40
+        }
+    }
+}, {
+    "site": {
+        "id": 40,
+        "name": "PG-6",
+        "description": "Tech Station",
+        "lat": 25.760264,
+        "lon": -80.374552,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 4,
+        "name": "Administration",
+        "description": "FIU Administration Decal"
+    },
+    "area": {
+        "id": 385,
+        "label": "A",
+        "score": 1,
+        "site": {
+            "id": 40,
+            "name": "PG-6",
+            "description": "Tech Station",
+            "lat": 25.760264,
+            "lon": -80.374552,
+            "network": 1
+        },
+        "level": {
+            "id": 29,
+            "level": 1,
+            "altitude": 0,
+            "site": 40
+        }
+    }
+}, {
+    "site": {
+        "id": 40,
+        "name": "PG-6",
+        "description": "Tech Station",
+        "lat": 25.760264,
+        "lon": -80.374552,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 5,
+        "name": "Executive",
+        "description": "FIU Executive Decal"
+    },
+    "area": {
+        "id": 385,
+        "label": "A",
+        "score": 1,
+        "site": {
+            "id": 40,
+            "name": "PG-6",
+            "description": "Tech Station",
+            "lat": 25.760264,
+            "lon": -80.374552,
+            "network": 1
+        },
+        "level": {
+            "id": 29,
+            "level": 1,
+            "altitude": 0,
+            "site": 40
+        }
+    }
+}, {
+    "site": {
+        "id": 40,
+        "name": "PG-6",
+        "description": "Tech Station",
+        "lat": 25.760264,
+        "lon": -80.374552,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 6,
+        "name": "Metered",
+        "description": "Metered Parking"
+    },
+    "area": null
+}, {
+    "site": {
+        "id": 40,
+        "name": "PG-6",
+        "description": "Tech Station",
+        "lat": 25.760264,
+        "lon": -80.374552,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 7,
+        "name": "Disabled",
+        "description": "Disabled Parking"
+    },
+    "area": {
+        "id": 385,
+        "label": "A",
+        "score": 1,
+        "site": {
+            "id": 40,
+            "name": "PG-6",
+            "description": "Tech Station",
+            "lat": 25.760264,
+            "lon": -80.374552,
+            "network": 1
+        },
+        "level": {
+            "id": 29,
+            "level": 1,
+            "altitude": 0,
+            "site": 40
+        }
+    }
+}, {
+    "site": {
+        "id": 40,
+        "name": "PG-6",
+        "description": "Tech Station",
+        "lat": 25.760264,
+        "lon": -80.374552,
+        "network": {
+            "id": 1,
+            "name": "UniversityCity",
+            "description": "UniversityCity Prosperity Project"
+        }
+    },
+    "decal": {
+        "id": 8,
+        "name": "Carpool",
+        "description": "FIU Carpool Decal"
+    },
+    "area": {
+        "id": 385,
+        "label": "A",
+        "score": 1,
+        "site": {
+            "id": 40,
+            "name": "PG-6",
+            "description": "Tech Station",
+            "lat": 25.760264,
+            "lon": -80.374552,
+            "network": 1
+        },
+        "level": {
+            "id": 29,
+            "level": 1,
+            "altitude": 0,
+            "site": 40
+        }
+    }
+}]

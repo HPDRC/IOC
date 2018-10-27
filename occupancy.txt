@@ -1,0 +1,73 @@
+[{
+    "site_id": 35,
+    "decalgroup": "Student",
+    "total": 560,
+    "available": -1,
+    "created": "2017-03-07T19:38:29.319092"
+}, {
+    "site_id": 35,
+    "decalgroup": "Staff",
+    "total": 211,
+    "available": 0,
+    "created": "2017-03-07T19:38:29.335201"
+}, {
+    "site_id": 36,
+    "decalgroup": "Student",
+    "total": 604,
+    "available": 0,
+    "created": "2017-03-07T19:38:29.369629"
+}, {
+    "site_id": 36,
+    "decalgroup": "Staff",
+    "total": 275,
+    "available": 0,
+    "created": "2017-03-07T19:38:29.391818"
+}, {
+    "site_id": 37,
+    "decalgroup": "Student",
+    "total": 1255,
+    "available": -1,
+    "created": "2017-03-07T19:38:29.454795"
+}, {
+    "site_id": 37,
+    "decalgroup": "Staff",
+    "total": 100,
+    "available": 0,
+    "created": "2017-03-07T19:38:29.478443"
+}, {
+    "site_id": 38,
+    "decalgroup": "Student",
+    "total": 945,
+    "available": 0,
+    "created": "2017-03-07T19:38:29.534384"
+}, {
+    "site_id": 38,
+    "decalgroup": "Staff",
+    "total": 330,
+    "available": 0,
+    "created": "2017-03-07T19:38:29.554428"
+}, {
+    "site_id": 39,
+    "decalgroup": "Student",
+    "total": 1559,
+    "available": -1,
+    "created": "2017-03-07T19:38:29.639628"
+}, {
+    "site_id": 39,
+    "decalgroup": "Staff",
+    "total": 157,
+    "available": -1,
+    "created": "2017-03-07T19:38:29.658061"
+}, {
+    "site_id": 40,
+    "decalgroup": "Student",
+    "total": 2500,
+    "available": 2500,
+    "created": "2017-03-07T19:38:29.664754"
+}, {
+    "site_id": 40,
+    "decalgroup": "Staff",
+    "total": 0,
+    "available": 0,
+    "created": "2017-03-07T19:38:29.670462"
+}]

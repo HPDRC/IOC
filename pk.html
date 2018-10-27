@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <title>Parking API test</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://xpect.cs.fiu.edu/itpaparkingsites/availabilities/",
+            "method": "GET",
+            "headers": {
+                "Authorization": "Token 1f691ebd8e5932dc6b925ed0c80430588b7d3fac",
+                "Accept": "application/json",
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    </script>
+</body>
+</html>

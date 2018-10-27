@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href="./css/ioc.css" rel="stylesheet" type="text/css">
+
+    <!-- 
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/jwplayer.js"></script>
+    -->
+
+    <!-- 
+    <link href="./css/video.css" rel="stylesheet" type="text/css">
+    <script src="./js/video.js"></script>
+    <script src="./js/videojscontrib.js"></script>
+    -->
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.10.2/alt/video-js-cdn.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.10.2/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.0.2/videojs-contrib-hls.js"></script> -->
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,700" rel="stylesheet" type="text/css">
+
+    <title>ITPA Interactive Operations Center</title>
+</head>
+<body>
+
+    <!-- MAP/URL-API components -->
+
+    <!-- <script type="text/javascript" src="http://localhost/terramap/mapapi.js"></script>-->
+
+    <script type="text/javascript" src="http://localhost/terramap/openlayers/ol-debug.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/namespace.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/consts.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/platform.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/methods.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/domui.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/cookies.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/routingservice.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/ajax.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/glyphlib.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/glyphbutton.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/cssstylecreator.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/styles.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/debug.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/keyedlist.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/listeners.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/volcontrol.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/videopopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/videotrackplayer.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/graphbar.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/popup.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/radioCheckBtn.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/tbarpopup.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/canvas.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/dataParser.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/layout.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/urlparams.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/listcontent.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/dlayer.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/splitter.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/map.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/routeshapeeditor.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/polycode.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/geocodefly.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/revgeocoder.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/dbpage.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapinteract.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/customcontrol.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/featurelayer.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/deprecated.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/keyedfeaturelist.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/keyedfeature.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapfeature.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapfeaturestyle.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/mapfeaturegeom.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/customFeatures.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/maphtmloverlay.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/postrender.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legend.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legendpopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legendpopupm1.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/legendoptions.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/layerspopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/typespopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/sourcespopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/infopopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/locinfopopup.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/messagepopup.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/mapapi/addressbar.js"></script>
+
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/api.js"></script>
+    <script type="text/javascript" src="http://localhost/terramap/apiCommon/commonnames.js"></script>
+
+    <!-- components of this ITPA app -->
+
+    <script type="text/javascript" src="http://localhost/oc/oc.js"></script>
+
+    <script type="text/javascript" src="http://localhost/oc/applayout.js"></script>
+
+    <script type="text/javascript" src="http://localhost/oc/ipta.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/fullscreenbuslinejson.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/notificationeditor.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/routestopseditor.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/extlineloader.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/extlineshapeloader.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/mapshapeeditor.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/mapcentroideditor.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/featuretable.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/featuretables.js"></script>
+
+    <script type="text/javascript" src="http://localhost/oc/coreeventhandler.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/bushistory.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/devicehistory.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/maps.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/mapeventhandler.js"></script>
+
+    <script type="text/javascript" src="http://localhost/oc/streetsmartgraphfeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/busfeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/platformfeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/garagefeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/occupancyfeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/routefeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/messagefeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/incidentfeaturestyles.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/devicefeaturestyles.js"></script>
+
+    <script type="text/javascript" src="http://localhost/oc/livefeeds.js"></script>
+
+    <script type="text/javascript" src="http://localhost/oc/appstyles.js"></script>
+
+    <script type="text/javascript" src="http://localhost/oc/adhocbuses.js"></script>
+
+    <!-- ITPA Core components -->
+
+    <script type="text/javascript" src="http://localhost/oc/core/core.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/streetsmart.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/message.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/incident.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/garage.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/occupancy.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/device.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/user.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/notification.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/bus.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/platform.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/route.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/eta.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/service.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/busfeed.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/pkrecommendation.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/pklastevent.js"></script>
+    <script type="text/javascript" src="http://localhost/oc/core/corefeaturelists.js"></script>
+
+
+    <!-- initialization of this ITPA app -->
+
+    <script type="text/javascript" src="./init.js"></script>
+</body>
+</html>

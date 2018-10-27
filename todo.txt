@@ -1,0 +1,503 @@
+- IOC
+
+	- 
+
+
+*- improve services table cells
+	*- added / deleted exceptions
+
+*- goto service button for each service
+
+*- Replace MDT with agency prefix throughout
+
+*- Guided tour
+	*- Find routes with more than 1 direction automatically
+	*- Only add the 1 direction step when there's a 1 direction route
+	*- Find routes with more than 1 stop seq automatically
+	*- Replace MDT with prefix, etc
+
+*- Call the right MARTA service when MARTA button clicked
+
+
+- MDT Stop Indices / Projs
+
+	stop seqs table row
+		*create one button per stop
+		*color stop buttons according to fail/not fail
+		*on button clicked select seqindex in edit stop seq
+		*add prev/next stop buttons
+	map
+		*clicking on a stop marker selects the seq
+		*show wrong at higher zindex, show selected at higher still
+		*paint partial ls up to selected stop in seq, if any
+
+	*coordinate styles between selected, ok, wrong table stop buttons and map markers
+
+	476		5 failed distance, given MDT trip shape is missing points at the end
+
+
+- MDT Explorer:
+
+	- position plan step markers according to type to avoid overlap with other plan step markers and other markers (start, end, stop, etc)
+	- full opacity
+
+	- Plan Plan
+
+		*- create step 0 ("From Start location") for each plan
+		*- send date to backend
+			*- send current date/time when not showing history
+			*- send current history date/time when showing history
+		*- backend return start date and starthms
+		*- add refresh button to trip plans title
+		*- add partial shape line string for plan trip sections
+		*- add menus for all missing configurable options:
+			*max plans
+			*max plan minutes
+			*max number of trips per plan
+			*min trip distance km
+			*max stop to stop distance km
+		*- initialize settings with plan options
+		*- use plan menu selections
+
+
+	*- Show buses
+		*-all
+		*-selected route
+		*-selected route and direction
+		*-selected trip
+
+
+- 1/29 3pm bus 3120 route 17
+
+- BusHistory last hour:
+
+	trips: 5.12 waiting, 1.95 content download, 7.06 total
+	trips2: 
+
+- MDT Explorer
+
+	- calendar min max dates
+		- don't show month prev/next button for before / after min max dates
+		- show days grayed out and don't accept click on days before after min max dates
+
+	*- encapsulate css classes and styles
+
+	*- add calendar and hour selection
+
+	- add traffic history mode to real time traffic mode
+
+		- update next stop index
+		- stop id, stop index, next stop id and next stop item do not need update
+		- update HMSStr
+		- update label and selected label
+			- use pre-calculated field with route/trip info for unselected label
+
+	- search by route id, stop id, trip id, bus id, bus name?
+
+- Trips
+
+	*- hit test bus using last stop's point in shape, not last bus's
+	- open bus tracker for calculated bus next stop
+
+	*- rename to MDT explorer
+
+	*- services table
+
+	*- fix API app bus table switch to use display instead of dom manipulation
+
+	*- summary line
+
+	*- bus summary line
+
+	- stop popup with trip buttons, concept of selected stop
+		*- highlight current trip button
+		*- better tooltips
+		*- scrol to current trip button
+		*- next / prev stop buttons for navigation through stops in same trip
+		*- highlight trips on same sequence as selected trip
+		*- close button for popup
+		*- fix bug on prev/next
+		*- hide prev/next div when stop is not shown in current trip
+
+	- divine bus schedule adherence (== deviation from expected position at a given time)
+		*- display like a color bar on bus marker
+		*- show selected bus summary info
+		*- show schedule adherence stats
+
+	- show buses on route table?
+
+	- API tables: 
+		- notify when selected row is deleted or filtered out
+		- notify when content changed due to filtering?
+
+	backend:
+
+	- clean up mdt_import
+
+		*- make version with only active tables
+
+		*- add stop distance calculation over simplified shape linestrings
+			- pending verification
+
+		- make it run as service
+			- download updated files
+			- check for modifications
+			- update tables only when needed
+			- signal database for traffic refresh
+			- keep older versions for replay?
+
+	- processing:
+
+		- stop seqs
+			- calculate stops distance in simplified shape
+
+		- calculate bus location in route (last stop, next stop)
+
+		- calculate bus instant schedule adherence (how late/early)
+			- this delta + scheduled stop times = eta times
+
+		- simulate schedule
+			- create and buses along trip shapes, moving on schedule
+
+		- detect missing buses in MDT feed
+			- trips that should be happening but arent
+
+	- bus table?
+
+	- unknown trip ids: 3802135, 3802120, 3802123, 3802143, 3802128, 3802127, 3802178, 3802174, 3802121, 3802113, 3802114, 3802115, 3802111, 3802129, 3802107, 3802131, 3802117, 3802150, 3802151, 3802185, 3802147
+
+
+- Bus traffic replay
+	*- color selected menu items differently
+	*- make standalone version that asks for login credentials
+	*- modify backend bus history service to return info on single or all buses
+	*- include public_transport_vehicle_id in backend bus history result set
+	*- create base interface with HCF
+	*- retrieve data from service
+	*- add menus for hour, am/pm, quarter
+	*- display bus animation
+	*- show bus lines and stops for lines in history
+	*- toolbar
+		*- show/hide all labels
+		*- track/stop tracking current bus
+		*- stop (goes back to 1st event and pauses)
+		*- play/pause
+		*- speed menu (1x, 10x, 100x)
+		*- display/hide bus track
+		*- scrub bar
+		*- break in block divs
+		*- font
+
+	- click on event route to set time of trip
+		- overlaping events are a problem
+	- retrieve next / prev hour of events
+
+
+
+- multilinestring editor:
+	- separate map listener from instruction displayer
+	- undo / redo, undo all, redo all, revert
+	- exchange text compressed ls google format??
+
+- IOC: user list
+	grant / revoke admin privileges to/from user
+
+- MAP API: map Hover In/Out event
+	- rethink how to avoid problems when hovering in/out with openlayers
+
+- bus toolbar
+	show simulated video
+		opens JW video window with some mvideo
+
+- cycle through history of device id by date
+	- use date/arrow controls refactored from busHistory
+
+- improve date picker
+	- dates with content (display little dot)
+	- date range, min max date
+
+- improve date display
+	- device last position on, history and table
+	- bus etas
+
+*- IOC: login
+	*- show login interaction only when url parameter present
+
+*- Date picker
+	*- encapsulate styles
+	*- move into TF-API
+
+*- improve timing and synch of lines / stops refresh
+	*- ITPA-Boot: log editing services after executed, instead of before
+	*- Frontend: use service count instead of date, IOC and app
+
+*- multilinestring editor:
+	*- make work without normal route
+	*- make names (normal / custom) customizable
+	*- make work with empty custom route
+		*- use passed parameter if valid mlps but empty
+		*- create new object if parameter is invalid
+		*- pass object back to caller on close notification
+	*- make full screen wrapper general
+	*- make editor work with existing map
+		*- pass zindices of layers to be created
+		*- layers need to be added / removed when editor is activated / closed
+	*- change start new segment from click to double click
+	*- click map to de-select currently selected
+	*- custom ls command
+		*- clear
+		*- clone
+		*- reduce segments
+		*- reduce points
+
+*- ITPA Bus Line Editor
+
+	*- refresh ITPA bus lines from server
+	*- save single and all line shapes JSON
+	*- load edited lines JSON
+	*- improve de-selection of current bus line
+	*- encapsulate editor and styles css classes into TF API
+
+*- IOC Bus Line Toolbar
+	*- add button to read bus line shape JSON, like on standalone editor
+
+*- bus line editor, backend fixer
+
+	*- ioc:
+		*- send to itpa-boot original shape of newly inserted FIU lines
+		*- monitor service to reload lines / buses
+		*- test adding stops to newly added lines
+
+		*- fix display of MDT/FIU line names
+
+		*- implement line shape editor
+
+			*- edit settings
+				*mslShape
+				*mlsSmallShape
+				*title
+
+			*- controls
+				*title
+				*save/cancel buttons
+				*mls ls display / hide checkboxes for both mls's and their points
+
+			- improve feature styles
+				- add point feature orientation
+
+			*- add each mls ls individually, instead of a single feature
+			*- add mls ls's points, each point individually, instead of multipoint
+
+			*- editor
+				*- shift click to insert after
+				*- control click to delete
+				*- show start and end of selected LS with markers
+				*- implement LS function buttons using coded functionality
+				*- implement add segment functionality
+					*- add first point, move it, set adding flag
+				*- copy normal ls to custom
+				*- click on small segment to add point
+
+	*- backend:
+		*- backup line_index
+		*- implement ITPA-Boot line update
+
+	*- app
+
+		*- fix display of MDT/FIU line names
+		*- monitor service to reload lines / buses
+
+*- multi toaster
+	*- create toaster wrapper div
+	*- add individual toasts to the top or bottom of wrapper
+	*- ability to get the object (or function list) to created toast, so it can be programatically closed immediately or with a changed timeout
+	*- return toast instance with instance counter for isvisible and close
+
+*- IOC - Fix line != undefined assumption in FeatureTables getBusRowContent
+
+*- bus stop health checker and backend fixer
+
+	*- app
+
+		*- monitor service to re-load lines / stops and re-link them together and lines + buses
+
+	*- UPDATE STOPS service writes on the database
+		*system_bools table
+
+	*- services affected:
+		*-fiu_dynamic
+		*-mdt_dynamic
+		*-mdt_eta
+
+	*- when flag is true
+		*- services record running status to database
+		*- services sleep until it becomes false
+		*- when awaking from speep caused by flag
+		*- services re-load lookup tables at each run, performance impact is not too big
+
+	*- itpaboot service
+		*-receives add new stop / line data from frontend
+			*-otherwise service would have to collect that data, and be a lot slower
+			*-data must pass consistency check
+		*-logs service to database
+		*- other route and stop services use cached values, unless data is changed
+
+	*-ioc
+		*-generate json data for tables
+			*platform
+			*line_platform_route
+		*- monitor update stops to automatically reload lines / stops
+
+	*- test handling of obsolete stop by ioc
+		*- tested
+
+*- refresh garage / occupancy when add service was called after last garage refresh
+	*-garage refresh keeps track of when last refresh took place
+		*- done, but check for update uses counter instead of date
+	*-check when updating server stats
+	*-refresh only when not editing garage
+	*-when editing garage / stop editing garage notify server checker
+
+*- garage shape editor
+	*set extent to garage being edited
+	*add vertices
+	*del vertex
+	*segments between vertices
+	*only allow to save with min number of vertices == 3 (makes a triangle, 4th vertex added as copy of 1st because of MySQL)
+
+*- map api
+	*- non point keyedfeature should update geometry, if flag set to update geometry when feature is updated
+
+*- garage table
+	*add new garage
+		*confirmation msg/toast
+	*refresh button, edit centroid button, edit shape button
+	*create "Active" attribute for parking sites, to allow for removal from front end without removal from database
+	*show all editable attributes
+	*show all garages, not just user visible
+		*avoid showing polylines / labels / panning to 
+	*show error section
+	*update server
+
+*- buttons on tracking and eta map toast divs
+	*- to make the bus/bus stop current on table
+
+*- toolbar for certain types of tables
+	- bus
+		*hide labels
+		*show history
+			*opens bus history popup
+		*track bus position
+			*turns off cycle
+			*pans map to center on bus being tracked
+			*remove tracking when/if bus is deleted
+			*track new bus when click on row, if already tracking
+			*track new bus when click on marker, if already tracking
+				
+		*-show ETAs
+			*creates ETA map markers
+			*- update ETAs when ETAs are refreshed
+			*- stop displaying the list of ETAs for a bus/stop when the bus/stop is deleted
+				*monitor deleted items, if deleted item == etaitem, hide etas
+			*- stop displaying ETA on a bus/stop when the bus/stop is deleted
+				*monitor deleted items, if deleted item in list of items whose etas are being displayed, remove it from the list, remove feature from map
+			*- update ETA marker position when bus moves
+	- device
+		*hide labels
+		*show history
+			*opens device history popup
+
+	*- notifications
+		*open editor
+
+	*- platform
+		*hide labels
+		*-show ETAs
+
+*- longer ioc bus eta marker
+
+*- clickable ico eta markers
+
+*-table footer with item count
+
+*- notifications editor
+	*- add new notification
+	*- discard changes and refresh
+	*- consistency check and message
+	*- submit and refresh
+
+*- make message toaster
+
+*- make date picker
+	*- use in bus history and device history
+
+*- login for admin functions
+
+*- toast incidents and messages on table row click
+
+*- sort tables and keep them sorted on update
+
+*- device hover marker not updating when keyed item updates data
+
+*- implement device row
+
+*- improve bus row
+	*add bus line direction
+	*add #etas
+
+*- synch set always in hover on both maps
+
+*- individual table scroll parent divs
+	*- hide/show tables instead of replacing parent div content
+	*- keeps scroll pos between table changes
+
+*- double bind table rows / markers
+	*- when marker clicked select table and row
+	*- when row clicked, stop cycling, pan to marker
+
+*- keep layer objects
+*- tell if layers are visible
+*- flash animate only when layer is visible, by removing largeMap from animation
+
+*- flash device movement
+*- show device id / last updated on hover
+	
+*- display history of a given device id
+
+*- checkboxes to turn animations on/off
+	
+*-Backend
+
+	*- retrieve history of a given device id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

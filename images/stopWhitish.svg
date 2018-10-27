@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38"
+   height="40"
+   viewBox="0 0 37.999999 40"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="stopWhitish.svg">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>map overlay/station clustered </dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2048"
+     inkscape:window-height="1089"
+     id="namedview20"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="18.040778"
+     inkscape:cx="13.563878"
+     inkscape:cy="20"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">map overlay/station clustered </title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8">
+    <rect
+       id="path-1"
+       x="-116"
+       y="-55"
+       width="501"
+       height="310" />
+    <mask
+       id="mask-2"
+       maskContentUnits="userSpaceOnUse"
+       maskUnits="objectBoundingBox"
+       x="0"
+       y="0"
+       width="501"
+       height="310"
+       fill="white">
+      <use
+         xlink:href="#path-1"
+         id="use12"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </mask>
+  </defs>
+  <path
+     style="fill:#fffff0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:connector-curvature="0"
+     id="Shape"
+     d="m 17.15573,38.532099 0,-0.597482 0,-9.42324 C 10.899425,27.611646 6.0901082,22.202071 6.0901082,15.663147 6.0901082,9.1242227 10.899425,3.7146461 17.15573,2.8149149 l 0,-0.7495246 c 0,-1.024068 0.825706,-1.85424015 1.84427,-1.85424015 1.018564,0 1.84427,0.83017215 1.84427,1.85424015 l 0,0.7495246 c 6.256305,0.8997312 11.065622,6.3093078 11.065622,12.8482321 0,6.538924 -4.809317,11.948499 -11.065622,12.84823 l 0,9.42324 0,0.597482 3.688541,0 0.614761,0 0,1.23616 -0.614761,0 -3.688541,0 0,0.02059 -3.68854,0 0,-0.02059 -3.688541,0 -0.614761,0 0,-1.23616 0.614761,0 3.688541,0 z" />
+  <ellipse
+     style="fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:0.60913706"
+     ry="9.2711964"
+     rx="9.2213516"
+     cy="15.66314"
+     cx="18.999996"
+     id="Oval-13-Copy" />
+</svg>

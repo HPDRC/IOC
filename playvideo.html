@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width" />    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.19.0/alt/video-js-cdn.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.19.0/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.3.3/videojs-contrib-hls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body style="width:100%;height:100%;overflow:hidden;margin:0px;padding:0px;border:0px;">
+    <div class="streams-wrapper" id="stream-div" style="width:100%;height:100%;overflow:hidden;position:absolute;left:0px;top:0px;margin:0px;border:0px;padding:0px;"></div>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                function addStream(streamSrc) {
+                    if (!!streamSrc) {
+                        var streamsWrapper = document.getElementById("stream-div"), video = document.createElement("video");
+                        video.id = streamSrc;
+                        video.className = "video-js vjs-default-skin";
+                        video.setAttribute("controls", "");
+                        video.setAttribute("preload", "auto");
+                        video.style.width = "100%";
+                        video.style.height = "100%";
+                        streamsWrapper.appendChild(video);
+                        var options = {
+                            plugins: {
+                                reloadSourceOnError: {}
+                            }
+                        };
+                        videojs(video, options).ready(function () {
+                            this.src({ type: "application/x-mpegURL", src: streamSrc }); this.play();
+                        });
+                    }
+                }
+                function getStreamSrc() {
+                    var url = window.location.href, index = url.indexOf('?');
+                    if (index > 0) { url = url.split('?')[1]; }
+                    else {
+                        index = url.indexOf('#');
+                        if (index > 0) { url = url.split('#')[1]; } else { return undefined;}
+                    }
+                    var params = url.split('&'), nParams = params.length;
+                    for (var i = 0; i < nParams; ++i) {
+                        var keyValue = params[i].split('='), key = keyValue[0];
+                        if (key.toLowerCase() == 'src') {
+                            var value = keyValue[1];
+                            return !!value ? unescape(value.trim()) : undefined;
+                        }
+                    }
+                    return undefined;
+                }
+                function start() {
+                    try { addStream(getStreamSrc()); }
+                    catch (e) { console.log('playvideo exception'); }
+                }
+                setTimeout(start, 250);
+            });
+        })(jQuery);
+    </script></body>
+</html>

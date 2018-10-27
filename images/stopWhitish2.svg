@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="23px" viewBox="0 0 14 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/transit white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/transit-white">
+            <rect id="Rectangle-15" fill="#FFFFFF" x="6.25" y="15" width="1.5" height="7.66666667"></rect>
+            <path d="M6.25,2.42000008 C6.25,2.83421364 7.75,2.83421364 7.75,2.42000008 L7.75,0.75 C7.75,0.335786438 7.41421356,0 7,0 C6.58578644,0 6.25,0.335786438 6.25,0.75 L6.25,2.42000008 Z" id="Line" fill="#FFFFFF"></path>
+            <path d="M3.5,22.5 L10.5,22.5" id="Line" stroke="#FFFFFF"></path>
+            <path d="M7,15.5 C10.8659932,15.5 14,12.3659932 14,8.5 C14,4.63400675 10.8659932,1.5 7,1.5 C3.13400675,1.5 0,4.63400675 0,8.5 C0,12.3659932 3.13400675,15.5 7,15.5 Z M7,14.1 C10.0927946,14.1 12.6,11.5927946 12.6,8.5 C12.6,5.4072054 10.0927946,2.9 7,2.9 C3.9072054,2.9 1.4,5.4072054 1.4,8.5 C1.4,11.5927946 3.9072054,14.1 7,14.1 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
